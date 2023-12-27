@@ -21,6 +21,7 @@ h1 {
   color: #D6382B;
   font-size: 8em;
   margin: 0;
+  font-weight: bold;
 }
 
 /* Setting up Media querys so that i dont have an issue with the large title*/
@@ -45,6 +46,30 @@ h1:last-child {
 .info-text {
   color: #271613;
   font-family: "Lato", sans-serif;
+}
+
+/* LINKS STYLE */
+.links-column {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  margin-left: 20px;
+  color: #D6382B;
+}
+
+.sidebar-link {
+  margin-bottom: 5px;
+}
+
+.links-column .sidebar-link a {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #D6382B;
+  transition: color 0.3s ease-in-out;
+}
+
+.links-column .sidebar-link a:hover {
+  color: #271613;
 }
 
 .navbar {
