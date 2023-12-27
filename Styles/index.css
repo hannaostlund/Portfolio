@@ -45,4 +45,23 @@ h1:last-child {
 .info-text {
   color: #271613;
   font-family: "Lato", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5EEE4;
+  border-bottom: 1px solid #271613;
+  padding: 10px 20px;
+}
+
+.name {
+  color: #271613;
+  font-family: "Lato", sans-serif;
+}
+
+.contact-link {
+  color: #271613;
+  font-family: "Lato", sans-serif;
 }/*# sourceMappingURL=index.css.map */
