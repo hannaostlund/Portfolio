@@ -1,0 +1,25 @@
+body {
+    background-color: $background-color;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: $red-color;
+    font-size: 10em; 
+    margin: 0;
+}
+
+h1:first-child {
+    align-self: flex-start; 
+}
+
+h1:last-child {
+    align-self: flex-end; 
+}
