@@ -5,6 +5,13 @@ body {
     justify-content: center;
 }
 
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px; 
+
+}
+
 .title {
     display: flex;
     flex-direction: column;
@@ -12,8 +19,21 @@ body {
 
 h1 {
     color: $red-color;
-    font-size: 10em; 
+    font-size: 8em; 
     margin: 0;
+}
+
+/* Setting up Media querys so that i dont have an issue with the large title*/
+@media screen and (max-width: 560px) {
+    h1 {
+        font-size: 6em; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 3em; 
+    }
 }
 
 h1:first-child {
@@ -22,4 +42,9 @@ h1:first-child {
 
 h1:last-child {
     align-self: flex-end; 
+}
+
+.info-text {
+   color: $primary-color;
+   font-family: 'Lato', sans-serif;
 }
