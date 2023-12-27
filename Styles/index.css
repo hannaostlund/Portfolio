@@ -52,16 +52,39 @@ h1:last-child {
   justify-content: space-between;
   align-items: center;
   background-color: #F5EEE4;
-  border-bottom: 1px solid #271613;
-  padding: 10px 20px;
+  border-bottom: 1px solid #D6382B;
+  padding: 20px 20px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.sun-icon {
+  margin-right: 10px;
 }
 
 .name {
   color: #271613;
   font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-.contact-link {
-  color: #271613;
+.contact-link,
+a {
+  color: #A69D96;
   font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+a:hover,
+.contact-link:hover {
+  color: #D6382B;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=index.css.map */
