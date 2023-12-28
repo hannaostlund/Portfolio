@@ -24,6 +24,31 @@ h1 {
     font-weight: bold;
 }
 
+.title {
+    position: relative;
+}
+
+h1 {
+    display: inline; 
+    position: relative;
+}
+
+.additional-info {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 50px; 
+    font-size: 16px; 
+    color: $red-color; 
+    visibility: visible; 
+    font-weight: 200;
+    font-family: 'Playfair Display', serif; 
+
+}
+
+
+
+
 /* Setting up Media querys so that i dont have an issue with the large title*/
 @media screen and (max-width: 560px) {
     h1 {
