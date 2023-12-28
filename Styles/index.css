@@ -22,6 +22,7 @@ h1 {
   font-size: 8em;
   margin: 0;
   font-weight: bold;
+  letter-spacing: -4px;
 }
 
 .title {
@@ -56,6 +57,7 @@ h1 {
   font-weight: 200;
   font-family: "Playfair Display", serif;
   width: 60%;
+  letter-spacing: -1px;
 }
 
 .container-titles {
@@ -74,6 +76,7 @@ h1 {
   font-weight: 200;
   font-family: "Playfair Display", serif;
   justify-content: flex-end;
+  letter-spacing: -1px;
 }
 
 .heading-text span {
@@ -104,6 +107,7 @@ h1:last-child {
   color: #271613;
   font-family: "Lato", sans-serif;
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 /* LINKS STYLE */
@@ -112,6 +116,7 @@ h1:last-child {
   font-size: 3em;
   margin-left: 20px;
   color: #D6382B;
+  letter-spacing: -2px;
 }
 
 .sidebar-link {
@@ -123,13 +128,13 @@ h1:last-child {
   font-weight: 700;
   text-decoration: none;
   color: #D6382B;
-  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out margin-left 4s;
 }
 
 .links-column .sidebar-link a:hover {
   color: #271613;
   font-style: italic;
-  transform: translateX(10px);
+  margin-left: 3px 4s;
 }
 
 .navbar {
