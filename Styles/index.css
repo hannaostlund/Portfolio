@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   padding: 20px;
 }
@@ -33,16 +33,52 @@ h1 {
   position: relative;
 }
 
-.additional-info {
-  position: absolute;
+/*.additional-info {  
+    position: relative;
+    top: 0;
+    display: inline; 
+    left: 100%;
+  margin-left: 30px; 
+    margin-bottom: 0px;
+    font-size: 16px; 
+    color: $red-color; 
+    visibility: visible; 
+    font-weight: 200;
+    font-family: 'Playfair Display', serif; 
+}*/
+.heading-text {
   top: 0;
+  display: inline;
   left: 100%;
-  margin-left: 50px;
-  font-size: 16px;
+  font-size: 20px;
   color: #D6382B;
   visibility: visible;
   font-weight: 200;
   font-family: "Playfair Display", serif;
+  width: 60%;
+}
+
+.container-titles {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.heading-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  color: #D6382B;
+  font-weight: 200;
+  font-family: "Playfair Display", serif;
+  justify-content: flex-end;
+}
+
+.heading-text span {
+  margin-bottom: 5px;
+  text-align: right;
 }
 
 /* Setting up Media querys so that i dont have an issue with the large title*/
@@ -67,12 +103,13 @@ h1:last-child {
 .info-text {
   color: #271613;
   font-family: "Lato", sans-serif;
+  margin-bottom: 20px;
 }
 
 /* LINKS STYLE */
 .links-column {
   font-family: "Playfair Display", serif;
-  font-size: 1.5em;
+  font-size: 3em;
   margin-left: 20px;
   color: #D6382B;
 }
@@ -86,11 +123,13 @@ h1:last-child {
   font-weight: 700;
   text-decoration: none;
   color: #D6382B;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .links-column .sidebar-link a:hover {
   color: #271613;
+  font-style: italic;
+  transform: translateX(10px);
 }
 
 .navbar {
