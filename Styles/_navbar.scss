@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: $background-color;
-    border-bottom: 1px solid $red-color; 
+    border-bottom: 1px solid $secondary-color; 
     padding: 20px 20px; 
 }
 
@@ -17,10 +17,10 @@
 }
 
 .name {
-    color: $primary-color;
+    color: $secondary-color;
     font-family: 'Lato', sans-serif; 
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: lighter;
 }
 
 .contact-link,
@@ -28,10 +28,11 @@ a {
     color: $secondary-color;
     font-family: 'Lato', sans-serif; 
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: lighter;
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; 
+    margin-right: 20px;
 }
 
 a:hover,

@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400&display=swap");
+/*$primary-color: #271613;
+$red-color: #D6382B;
+$background-color: #F5EEE4;
+$secondary-color: #A69D96;
+*/
 body {
-  background-color: #F5EEE4;
+  background-color: #F4EEDD;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -12,54 +18,52 @@ body {
   padding: 20px;
 }
 
-.title {
+.content-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-h1 {
-  color: #D6382B;
-  font-size: 8em;
+.title-wrapper {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.small-title {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  color: #222222;
+  font-size: 4em;
   margin: 0;
-  font-weight: bold;
+  font-weight: lighter;
   letter-spacing: -4px;
-}
-
-.title {
-  position: relative;
-}
-
-h1 {
-  display: inline;
-  position: relative;
-}
-
-/*.additional-info {  
-    position: relative;
-    top: 0;
-    display: inline; 
-    left: 100%;
-  margin-left: 30px; 
-    margin-bottom: 0px;
-    font-size: 16px; 
-    color: $red-color; 
-    visibility: visible; 
-    font-weight: 200;
-    font-family: 'Playfair Display', serif; 
-}*/
-.heading-text {
-  top: 0;
-  display: inline;
-  left: 100%;
-  font-size: 20px;
-  color: #D6382B;
-  visibility: visible;
-  font-weight: 200;
   font-family: "Playfair Display", serif;
-  width: 60%;
-  letter-spacing: -1px;
 }
 
+.big-title {
+  color: #EF4F46;
+  font-size: 8em;
+  margin: 0 auto;
+  font-weight: lighter;
+  letter-spacing: -4px;
+  font-family: "Playfair Display", serif;
+}
+
+/* Setting up Media querys so that i dont have an issue with the large title*/
+@media screen and (max-width: 560px) {
+  .big-title, .small-title {
+    font-size: 6em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .big-title, .small-title {
+    font-size: 3em;
+  }
+}
 .container-titles {
   display: flex;
   justify-content: flex-end;
@@ -72,40 +76,23 @@ h1 {
   display: flex;
   flex-direction: column;
   font-size: 18px;
-  color: #D6382B;
+  color: #EF4F46;
   font-weight: 200;
   font-family: "Playfair Display", serif;
   justify-content: flex-end;
   letter-spacing: -1px;
 }
 
-.heading-text span {
+.titles-text span {
   margin-bottom: 5px;
   text-align: right;
 }
 
-/* Setting up Media querys so that i dont have an issue with the large title*/
-@media screen and (max-width: 560px) {
-  h1 {
-    font-size: 6em;
-  }
-}
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 3em;
-  }
-}
-h1:first-child {
-  align-self: flex-start;
-}
-
-h1:last-child {
-  align-self: flex-end;
-}
-
 .info-text {
-  color: #271613;
+  color: #222222;
   font-family: "Lato", sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 1em;
   margin-bottom: 20px;
   line-height: 1.5;
 }
@@ -115,7 +102,7 @@ h1:last-child {
   font-family: "Playfair Display", serif;
   font-size: 3em;
   margin-left: 20px;
-  color: #D6382B;
+  color: #EF4F46;
   letter-spacing: -2px;
 }
 
@@ -127,12 +114,12 @@ h1:last-child {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   text-decoration: none;
-  color: #D6382B;
+  color: #EF4F46;
   transition: color 0.3s ease-in-out margin-left 4s;
 }
 
 .links-column .sidebar-link a:hover {
-  color: #271613;
+  color: #222222;
   font-style: italic;
   margin-left: 3px 4s;
 }
@@ -141,8 +128,8 @@ h1:last-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #F5EEE4;
-  border-bottom: 1px solid #D6382B;
+  background-color: #F4EEDD;
+  border-bottom: 1px solid #8F8C83;
   padding: 20px 20px;
 }
 
@@ -156,25 +143,26 @@ h1:last-child {
 }
 
 .name {
-  color: #271613;
+  color: #8F8C83;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: lighter;
 }
 
 .contact-link,
 a {
-  color: #A69D96;
+  color: #8F8C83;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: lighter;
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  margin-right: 20px;
 }
 
 a:hover,
 .contact-link:hover {
-  color: #D6382B;
+  color: #EF4F46;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=index.css.map */

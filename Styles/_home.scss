@@ -9,56 +9,54 @@ body {
     max-width: 900px;
     width: 100%;
     padding: 20px; 
-
 }
 
-.title {
+.content-wrapper {
     display: flex;
     flex-direction: column;
-}
+    align-items: center;
+    justify-content: center; 
+    height: 100vh; 
+  }
+  
+  .title-wrapper {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px; 
+  }
 
-h1 {
-    color: $red-color;
-    font-size: 8em; 
+  .small-title {
+    position: absolute;
+    top: -50px; 
+    right: 0;
+    color: $primary-color;
+    font-size: 4em;
     margin: 0;
-    font-weight: bold;
+    font-weight: lighter;
     letter-spacing: -4px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .big-title {
+    color: $red-color;
+    font-size: 8em;
+    margin: 0 auto;
+    font-weight: lighter;
+    letter-spacing: -4px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Setting up Media querys so that i dont have an issue with the large title*/
+@media screen and (max-width: 560px) {
+    .big-title, .small-title {
+        font-size: 6em; 
+    }
 }
 
-.title {
-    position: relative;
-}
-
-h1 {
-    display: inline; 
-    position: relative;
-}
-
-/*.additional-info {  
-    position: relative;
-    top: 0;
-    display: inline; 
-    left: 100%;
-  margin-left: 30px; 
-    margin-bottom: 0px;
-    font-size: 16px; 
-    color: $red-color; 
-    visibility: visible; 
-    font-weight: 200;
-    font-family: 'Playfair Display', serif; 
-}*/
-
-.heading-text {
-    top: 0;
-    display: inline; 
-    left: 100%;
-    font-size: 20px; 
-    color: $red-color; 
-    visibility: visible; 
-    font-weight: 200;
-    font-family: 'Playfair Display', serif; 
-    width: 60%;
-    letter-spacing: -1px;
+@media screen and (max-width: 480px) {
+    .big-title, .small-title {
+        font-size: 3em; 
+    }
 }
 
 .container-titles {
@@ -78,46 +76,25 @@ h1 {
     font-family: 'Playfair Display', serif;
     justify-content: flex-end; 
     letter-spacing: -1px;
-
 }
 
-.heading-text span {
+.titles-text span {
     margin-bottom: 5px; 
     text-align: right; 
 }
 
 
-/* Setting up Media querys so that i dont have an issue with the large title*/
-@media screen and (max-width: 560px) {
-    h1 {
-        font-size: 6em; 
-    }
-}
-
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 3em; 
-    }
-}
-
-h1:first-child {
-    align-self: flex-start; 
-}
-
-h1:last-child {
-    align-self: flex-end; 
-}
-
 .info-text {
    color: $primary-color;
    font-family: 'Lato', sans-serif;
+   letter-spacing: 0.05em;
+   font-size: 1em; 
    margin-bottom: 20px;
    line-height: 1.5;
 }
 
 
 /* LINKS STYLE */
-
 .links-column {
     font-family: 'Playfair Display', serif;
     font-size: 3em; 
