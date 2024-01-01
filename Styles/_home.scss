@@ -7,9 +7,8 @@ body {
 
 .container {
     max-width: 900px;
-    width: 100%;
     padding: 20px; 
-    height: 100vh;
+    //height: 100vh;
 }
 
 .content-wrapper {
@@ -33,17 +32,18 @@ body {
     color: $primary-color;
     font-size: 4em;
     font-weight: lighter;
-    letter-spacing: -4px;
-    font-family: 'Playfair Display', serif;
+    //letter-spacing: -4px;
+    font-family: "amandine", sans-serif;
+    //font-family: 'Playfair Display', serif;
     margin-bottom: 40px;
   }
   
   .big-title {
     margin-top: 50px;
     color: $red-color;
-    font-size: 8em;
+    font-size: 7em;
     font-weight: lighter;
-    letter-spacing: -4px;
+    //letter-spacing: -4px;
     //font-family: 'Playfair Display', serif;
     font-family: "amandine", sans-serif;
     font-weight: 700;
@@ -82,7 +82,8 @@ body {
     margin-bottom: 2%;
     text-align: center;
     color: $primary-color;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Oxygen', sans-serif;
+    //font-family: 'Playfair Display', serif;
     letter-spacing: -0.7px;
     display: block;
     font-size: 1.2em; 

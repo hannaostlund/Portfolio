@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 /*
 $primary-color: #222222;
 $red-color: #EF4F46;
@@ -20,9 +21,7 @@ body {
 
 .container {
   max-width: 900px;
-  width: 100%;
   padding: 20px;
-  height: 100vh;
 }
 
 .content-wrapper {
@@ -46,18 +45,17 @@ body {
   color: #222222;
   font-size: 4em;
   font-weight: lighter;
-  letter-spacing: -4px;
-  font-family: "Playfair Display", serif;
+  font-family: "amandine", sans-serif;
   margin-bottom: 40px;
 }
 
 .big-title {
   margin-top: 50px;
   color: #EF4F46;
-  font-size: 8em;
+  font-size: 7em;
   font-weight: lighter;
-  letter-spacing: -4px;
-  font-family: "Playfair Display", serif;
+  font-family: "amandine", sans-serif;
+  font-weight: 700;
 }
 
 /* Setting up Media querys so that i dont have an issue with the large title*/
@@ -90,7 +88,7 @@ body {
   margin-bottom: 2%;
   text-align: center;
   color: #222222;
-  font-family: "Playfair Display", serif;
+  font-family: "Oxygen", sans-serif;
   letter-spacing: -0.7px;
   display: block;
   font-size: 1.2em;
@@ -132,6 +130,49 @@ body {
   color: #F5EEE4;
   background-color: #EF4F46;
   border: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5EEE4;
+  border-bottom: 1px solid #A69D96;
+  padding: 20px 20px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.sun-icon {
+  margin-right: 10px;
+}
+
+.name {
+  color: #A69D96;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.contact-link,
+a {
+  color: #A69D96;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  margin-right: 20px;
+}
+
+a:hover,
+.contact-link:hover {
+  color: #EF4F46;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -261,4 +302,150 @@ a:hover,
   position: fixed;
   bottom: 0;
   left: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5EEE4;
+  border-bottom: 1px solid #A69D96;
+  padding: 20px 20px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.sun-icon {
+  margin-right: 10px;
+}
+
+.name {
+  color: #A69D96;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.contact-link,
+a {
+  color: #A69D96;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  margin-right: 20px;
+}
+
+a:hover,
+.contact-link:hover {
+  color: #EF4F46;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container-body {
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
+.projects-heading {
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-bottom: 2%;
+  color: #EF4F46;
+  font-family: "Playfair Display", serif;
+  letter-spacing: -1px;
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+/* Styles for the form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  float: left;
+  width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  form {
+    max-width: 40%;
+  }
+}
+label {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0px;
+  font-size: 1.2em;
+  color: #EF4F46;
+}
+
+textarea,
+input[type=text],
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0px;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.text {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  color: #F5EEE4;
+  background-color: #222222;
+  border: none;
+  border-radius: 28px;
+  transition: color 0.4s, background-color 0.4s;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0px;
+  font-size: 1em;
+  line-height: normal;
+}
+
+.button:hover {
+  color: #F5EEE4;
+  background-color: #EF4F46;
+  border: none;
 }/*# sourceMappingURL=index.css.map */
