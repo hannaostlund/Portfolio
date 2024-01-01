@@ -44,7 +44,9 @@ body {
     font-size: 8em;
     font-weight: lighter;
     letter-spacing: -4px;
-    font-family: 'Playfair Display', serif;
+    //font-family: 'Playfair Display', serif;
+    font-family: "amandine", sans-serif;
+    font-weight: 700;
   }
   
   /* Setting up Media querys so that i dont have an issue with the large title*/
@@ -79,7 +81,7 @@ body {
     text-align: right; 
     margin-bottom: 2%;
     text-align: center;
-    color: $red-color;
+    color: $primary-color;
     font-family: 'Playfair Display', serif;
     letter-spacing: -0.7px;
     display: block;
@@ -126,3 +128,4 @@ body {
   background-color: $red-color;
   border: none;
 }
+
