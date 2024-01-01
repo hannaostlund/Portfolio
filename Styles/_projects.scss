@@ -1,55 +1,74 @@
-@import 'fonts';
-@import 'colorvariables';
-
-main {
-    background-color: $background-color;
+body {
     margin: 0;
+    padding: 0;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-body {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px; 
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    margin-bottom: 20px;
 }
 
 .projects-heading {
-    margin-left: 20px;
+    text-align: left;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+    margin-bottom: 2%;
+    color: $red-color;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -1px;
+    font-size: 4em;
+    font-weight: bolder;
 }
 
 .project-cards {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 30px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .project-card {
-    flex: 0 0 calc(30% - 20px); 
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-bottom: 20px;
-    padding: 10px;
-    color: $red-color;
-
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.project-title-1 {
+.project-title {
     font-size: 1.5em;
     margin-bottom: 10px;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    color: $red-color;
-    letter-spacing: -0.7px; }
+    color: $primary-color;
+    font-family: 'Lato', sans-serif;
+}
 
-.project-card img {
-    width: 100%; 
-    height: auto; 
-    max-width: 100%; 
-    text-align: center;
-    color: $red-color;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: -0.7px;
+.project-image {
+    max-width: 100%;    
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .project-description {
     font-size: 1em;
-    text-align: center;
-    color: $main-color;
-    font-family: 'Lato';
-    letter-spacing: -0.7px;
+    color: $primary-color;
+    font-family: 'Lato', sans-serif;
 }
