@@ -1,0 +1,55 @@
+@import 'fonts';
+@import 'colorvariables';
+
+main {
+    background-color: $background-color;
+    margin: 0;
+    display: flex;
+}
+
+.projects-heading {
+    margin-left: 20px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.project-card {
+    flex: 0 0 calc(30% - 20px); 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+    color: $red-color;
+
+}
+
+.project-title-1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: $red-color;
+    letter-spacing: -0.7px; }
+
+.project-card img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    text-align: center;
+    color: $red-color;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -0.7px;
+}
+
+.project-description {
+    font-size: 1em;
+    text-align: center;
+    color: $main-color;
+    font-family: 'Lato';
+    letter-spacing: -0.7px;
+}
