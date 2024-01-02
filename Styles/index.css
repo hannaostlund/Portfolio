@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 /*
 $primary-color: #222222;
@@ -108,7 +107,7 @@ body {
 
 .button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 30px 30px;
   margin: 5px;
   text-decoration: none;
   color: #F5EEE4;
@@ -125,49 +124,6 @@ body {
   color: #F5EEE4;
   background-color: #EF4F46;
   border: none;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #F5EEE4;
-  border-bottom: 1px solid #A69D96;
-  padding: 20px 20px;
-}
-
-.left-section {
-  display: flex;
-  align-items: center;
-}
-
-.sun-icon {
-  margin-right: 10px;
-}
-
-.name {
-  color: #A69D96;
-  font-family: "Oxygen", sans-serif;
-  font-weight: lighter;
-  text-transform: uppercase;
-}
-
-.contact-link,
-a {
-  color: #A69D96;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  font-weight: lighter;
-  text-decoration: none;
-  position: relative;
-  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-  margin-right: 20px;
-}
-
-a:hover,
-.contact-link:hover {
-  color: #EF4F46;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -199,10 +155,9 @@ body {
   margin-bottom: 50px;
   margin-bottom: 2%;
   color: #EF4F46;
-  font-family: "Playfair Display", serif;
-  letter-spacing: -1px;
+  font-family: "amandine", sans-serif;
+  font-weight: 700;
   font-size: 4em;
-  font-weight: bolder;
 }
 
 .project-cards {
@@ -272,7 +227,7 @@ body {
 .contact-link,
 a {
   color: #A69D96;
-  font-family: "Lato", sans-serif;
+  font-family: "Oxygen", sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
   text-decoration: none;
@@ -327,10 +282,8 @@ body {
   margin-bottom: 50px;
   margin-bottom: 2%;
   color: #EF4F46;
-  font-family: "Playfair Display", serif;
-  letter-spacing: -1px;
+  font-family: "amandine", sans-serif;
   font-size: 4em;
-  font-weight: bolder;
 }
 
 /* Styles for the form */
@@ -348,7 +301,7 @@ form {
   }
 }
 label {
-  font-family: "Lato", sans-serif;
+  font-family: "Oxygen", sans-serif;
   letter-spacing: 0px;
   font-size: 1.2em;
   color: #EF4F46;
@@ -363,8 +316,8 @@ button {
   margin-bottom: 15px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  font-family: "Lato", sans-serif;
-  letter-spacing: 0px;
+  font-family: "amandine", sans-serif;
+  font-weight: 400;
   font-size: 1em;
 }
 
@@ -374,7 +327,7 @@ textarea {
 }
 
 .text {
-  font-family: "Lato", sans-serif;
+  font-family: "Oxygen", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -389,10 +342,8 @@ textarea {
   border: none;
   border-radius: 28px;
   transition: color 0.4s, background-color 0.4s;
-  font-family: "Playfair Display", serif;
-  letter-spacing: 0px;
-  font-size: 1em;
-  line-height: normal;
+  font-family: "amandine", sans-serif;
+  font-weight: 400;
 }
 
 .button:hover {

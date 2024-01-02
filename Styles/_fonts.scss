@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
-
 // My Fonts are Playfair Display for headings and such, and Lato for regular texts 
 
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400&display=swap');
-
-// trying the Hanken one instead of Lato
 // Amandine Regular
 // font-family: "amandine", sans-serif;
 // font-weight: 400;
@@ -26,3 +22,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 // adding oxygen perhaps paired with amandine
 //font-family: 'Oxygen', sans-serif;
+
+$main-heading-font: "amandine", sans-serif;
+$main-p-font: 'Oxygen', sans-serif;
