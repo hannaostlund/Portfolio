@@ -15,8 +15,12 @@ $secondary-color: #A69D96;
 body {
   background-color: #F5EEE4;
   margin: 0;
-  display: flex;
-  justify-content: center;
+}
+
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .container {
@@ -34,23 +38,19 @@ body {
 }
 
 .title-wrapper {
-  position: relative;
-  text-align: center;
   margin-bottom: 40px;
 }
 
 .small-title {
-  position: absolute;
   right: 0;
   color: #222222;
-  font-size: 4em;
+  font-size: 5em;
   font-weight: lighter;
   font-family: "amandine", sans-serif;
-  margin-bottom: 40px;
 }
 
 .big-title {
-  margin-top: 50px;
+  margin-top: 20px;
   color: #EF4F46;
   font-size: 7em;
   font-weight: lighter;
@@ -62,10 +62,6 @@ body {
 @media screen and (max-width: 560px) {
   .big-title, .small-title {
     font-size: 6em;
-  }
-  .small-title {
-    margin-top: 30px;
-    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -120,9 +116,8 @@ body {
   border: none;
   border-radius: 28px;
   transition: color 0.4s, background-color 0.4s;
-  font-family: "Playfair Display", serif;
-  letter-spacing: 0px;
-  font-size: 1.2em;
+  font-family: "amandine", sans-serif;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -152,9 +147,9 @@ body {
 
 .name {
   color: #A69D96;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
+  font-family: "Oxygen", sans-serif;
   font-weight: lighter;
+  text-transform: uppercase;
 }
 
 .contact-link,
@@ -269,9 +264,9 @@ body {
 
 .name {
   color: #A69D96;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
+  font-family: "Oxygen", sans-serif;
   font-weight: lighter;
+  text-transform: uppercase;
 }
 
 .contact-link,
@@ -304,63 +299,19 @@ a:hover,
   left: 0;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #F5EEE4;
-  border-bottom: 1px solid #A69D96;
-  padding: 20px 20px;
-}
-
-.left-section {
-  display: flex;
-  align-items: center;
-}
-
-.sun-icon {
-  margin-right: 10px;
-}
-
-.name {
-  color: #A69D96;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  font-weight: lighter;
-}
-
-.contact-link,
-a {
-  color: #A69D96;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  font-weight: lighter;
-  text-decoration: none;
-  position: relative;
-  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-  margin-right: 20px;
-}
-
-a:hover,
-.contact-link:hover {
-  color: #EF4F46;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
 body {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.container-body {
-  max-width: 900px;
-  width: 100%;
-  padding: 20px;
-  height: 100vh;
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: center;
 }
 
 .wrapper {

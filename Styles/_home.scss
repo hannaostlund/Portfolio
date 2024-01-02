@@ -1,8 +1,12 @@
 body {
     background-color: $background-color;
     margin: 0;
-    display: flex;
-    justify-content: center;
+    }
+
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto; 
+  padding: 0 20px; 
 }
 
 .container {
@@ -21,25 +25,25 @@ body {
   }
   
   .title-wrapper {
-    position: relative;
-    text-align: center;
+//    position: relative;
+    //text-align: center;
     margin-bottom: 40px;
   }
 
   .small-title {
-    position: absolute;
+    //position: absolute;
     right: 0;
     color: $primary-color;
-    font-size: 4em;
+    font-size: 5em;
     font-weight: lighter;
     //letter-spacing: -4px;
     font-family: "amandine", sans-serif;
     //font-family: 'Playfair Display', serif;
-    margin-bottom: 40px;
+
   }
   
   .big-title {
-    margin-top: 50px;
+    margin-top: 20px;
     color: $red-color;
     font-size: 7em;
     font-weight: lighter;
@@ -53,11 +57,6 @@ body {
 @media screen and (max-width: 560px) {
     .big-title, .small-title {
         font-size: 6em; 
-    }
-
-    .small-title {
-        margin-top: 30px; 
-        text-align: center; 
     }
 }
 
@@ -118,9 +117,11 @@ body {
   border: none;
   border-radius: 28px; 
   transition: color 0.4s, background-color 0.4s;
-  font-family: 'Playfair Display', serif; 
-  letter-spacing: 0px;
-  font-size: 1.2em; 
+  font-family: "amandine", sans-serif;
+  font-weight: 400;
+  // font-family: 'Playfair Display', serif; 
+  //letter-spacing: 0px;
+  //font-size: 1.2em; 
   line-height: normal;
 }
 
