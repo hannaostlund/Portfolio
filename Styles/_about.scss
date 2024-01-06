@@ -25,10 +25,17 @@
   }
   
 .text-1 {
-    max-width: 458px;
-    height: 95px; 
-    font-size: 18px;
-    font-family: $main-p-font; 
+    margin-bottom: 5px; 
+    text-align: right; 
+    margin-bottom: 2%;
+    text-align: center;
+    color: $primary-color;
+    font-family: 'Oxygen', sans-serif;
+    //font-family: 'Playfair Display', serif;
+    letter-spacing: -0.7px;
+    display: block;
+    font-size: 1.2em; 
+    line-height: normal;
 }
   
   .hanna-img{
