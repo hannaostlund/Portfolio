@@ -35,8 +35,8 @@ body {
 
 .contact-text {
   color: $main-color;
-  font-family: $main-heading-font;
-}
+  font-family: $main-p-font; 
+  }
 
 /* Styles for the form */
 form {
@@ -70,7 +70,7 @@ form {
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-family: $main-heading-font;
+    font-family: $main-p-font;
     font-weight: 400;
     // font-family: 'Playfair Display', serif; 
     //letter-spacing: 0px;

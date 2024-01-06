@@ -1,7 +1,36 @@
+@import 'fonts';
+
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 20px;
+}
+
 .about-title {
+    text-align: center;
     margin-top: 20px;
     color: $red-color;
     font-size: 4em;
     font-family: "amandine", sans-serif;
-    font-weight: 700;
+    font-weight: 700;    
+  }
+  
+.text-block-1 {
+    display: flex;
+  }
+
+.small-heading {
+    font-family: $main-p-font; 
+  }
+  
+.text-1 {
+    max-width: 458px;
+    height: 95px; 
+    font-size: 18px;
+    font-family: $main-p-font; 
 }
+  
+  .hanna-img{
+      justify-content: flex-end;
+  }
