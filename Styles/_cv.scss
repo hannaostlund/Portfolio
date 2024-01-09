@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+    color: $red-color;
+    //font-family: 'Playfair Display', serif;
+    //letter-spacing: -1px;
+    font-family: $main-heading-font;
+    font-weight: 700;
+    font-size: 4em;
+}
+
+.h3-cv {
+    font-size: 1.5em;
+    color: $primary-color;
+    font-family: $main-heading-font;
+    font-weight: 700;
+    margin-top: 20px;  
+    margin-bottom: 20px;  
+}
+
+.h3-cv:hover {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: #071062;
+}
+
+.p-cv {
+    margin-top: 20px;    
+    font-size: 1em;
+    color: $primary-color;
+    font-family: $main-text-font;
+    line-height: 1.2;
+}
+
+.education-section,
+.work-experience-section {
+    margin-bottom: 30px;
+}
+
+.education-items,
+.work-experience-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.education-item,
+.work-experience-item {
+    flex: 1 0 calc(50% - 20px);
+    padding: 15px;
+    border: 0.1px solid #ccc;
+    border-radius: 5px;
+    background-color: #EDE8D8;
+}
+
+.education-item:hover,
+.work-experience-item:hover {
+    transform: translate(10px);
+    box-shadow: 0 5px 15px rgba(23, 8, 91, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .education-item,
+    .work-experience-item {
+        flex: 1 0 calc(33.333% - 20px);
+    }
+}
