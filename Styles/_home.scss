@@ -44,6 +44,7 @@ body {
     margin-bottom: 10px;
     color: $red-color;
     font-size: 7em;
+    text-transform: uppercase;
     //font-weight: lighter;
     //letter-spacing: -4px;
     //font-family: 'Playfair Display', serif;
@@ -79,7 +80,7 @@ body {
     margin-bottom: 2%;
     text-align: center;
     color: $primary-color;
-    font-family: $main-font;
+    font-family: $main-text-font;
     //font-family: 'Oxygen', sans-serif;
     //font-family: 'Playfair Display', serif;
     letter-spacing: -0px;
@@ -87,9 +88,6 @@ body {
     font-size: 1.2em; 
     line-height: normal;
 }
-
-
-
 /* Style for links */
 
 .links-container {
@@ -109,6 +107,7 @@ body {
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .custom-link:hover {
@@ -116,49 +115,37 @@ body {
   font-family: "amandine", sans-serif;
   font-weight: 700;
   font-style: italic;
-  color: #A69D96; 
-
+  color: $primary-color; 
+  transform: translateX(5px);  
 }
 
-/* Buttons STYLE 
+/* JS Animation for the HEADING */
 
-.button-container {
-  display: flex;
-  justify-content: center; 
-  gap: 20px; 
-  margin-bottom: 20px;
-  margin-top: 20px;
+.small-title,
+.big-title {
+  opacity: 0; /* Initially hide the titles */
+  transform: translateY(20px); /* Initially position them off-screen below */
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; /* Adjust timing to make the animation slower */
 }
 
-.button {
-    display: inline-block;
-    text-decoration: none;
-    color: $background-color;
-    background-color: $primary-color;
-    border: none;
-    border-radius: 28px; 
-    transition: color 0.4s, background-color 0.4s;
-    font-family: "amandine", sans-serif;
-    font-weight: 400;
-    text-align: center; 
-    padding: 15px 30px;
-    font-size: 1em; 
-    width: 120px; 
-  }
-
-.button:hover {
-  color: $background-color;
-  background-color: $red-color;
-  border: none;
+/* Show the titles with animation when content is in view */
+.content-wrapper.in-view .small-title,
+.content-wrapper.in-view .big-title {
+  opacity: 1;
+  transform: translateY(0); /* Move the titles up (from below) */
 }
-*/
 
+/* JS Animation for the titles and links */
 
-// Button media query
-@media screen and (max-width: 768px) {
-  .button {
-    padding: 10px 15px; 
-    font-size: 0.8em;
-    text-align: center; 
-  }
+.titles-text,
+.links-container {
+  opacity: 0; /* Initially hide the content */
+  transform: translateY(20px); /* Initially position them off-screen below */
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; /* Adjust timing to make the animation slower */
+}
+
+.content-wrapper.in-view .titles-text,
+.content-wrapper.in-view .links-container {
+  opacity: 1;
+  transform: translateY(0); /* Move the content up (from below) */
 }

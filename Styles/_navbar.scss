@@ -19,7 +19,7 @@
 
 .name {
     color: $secondary-color;
-    font-family: $main-font;
+    font-family: $main-text-font;
      //font-family: 'Lato', sans-serif; 
     font-weight: lighter;
     text-transform: uppercase;
@@ -28,7 +28,7 @@
 .contact-link,
 a {
     color: $secondary-color;
-    font-family: $main-font;
+    font-family: $main-text-font;
     text-transform: uppercase;
     font-weight: lighter;
     text-decoration: none;

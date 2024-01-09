@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div class="contact-link">
             <a href="../pages/projects.html">Projects</a>
-            <a href="../pages/aboutme.html">About me</a>
+            <a href="../pages/cv.html">CV</a>
             <a href="../pages/contact.html">Contact</a>
         </div>
     `;

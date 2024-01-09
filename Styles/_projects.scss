@@ -35,58 +35,109 @@ body {
 
 .project-cards {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px; 
+    margin-bottom: 30px;
 }
 
 .project-card {
-    width: 30%;
+    display: flex;
+    gap: 20px;
     padding: 20px;
     box-sizing: border-box;
-    text-align: center;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10vh;
+    border-radius: 8px;
+    //background-color: #071062;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.project-title {
-    font-size: 1.7em;
-    margin-bottom: 10px;
-    color: $primary-color;
-    font-weight: 400;
-    font-family: $main-heading-font;
+.project-card:hover {
+    transform: translate(10px);
+    box-shadow: 0 0 15px rgba(0, 0, 50, 0.3); 
+}
+
+.project-details {
+    flex: 2;
+}
+
+.link-to-project {
+    margin-top: 5px;
+}
+
+.project-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .project-image {
-    max-width: 100%;    
+    max-width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 15px;
-    margin-top: 15px;
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .project-image:hover {
-//  transform: translateX(10px);
-    transform: translateY(-10px);
+    transform: translate(10px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-.project-description-title {
-    font-size: 1em;
+}
+
+.project-title {
+    font-size: 2em;
+    margin-bottom: 10px;
     color: $primary-color;
-    font-family: $main-font;
     font-weight: 700;
-    font-size: 1em;
+    font-family: $main-heading-font;
+}
+
+.project-description-title {
+    font-size: 1.5em;
+    color: $primary-color;
+    font-family: $main-heading-font;
+    font-weight: 400;
+    margin-top: 20px;    
 }
 
 .project-description {
-    margin-top: 10px;
+    margin-top: 20px;    
     font-size: 1em;
     color: $primary-color;
-    font-family: $main-font;
+    font-family: $main-text-font;
     line-height: 1.2;
+}
+
+.skills-container {
+    display: flex;
+    gap: 5px; 
+    margin-top: 20px;    
+}
+
+.skill {
+    padding: 6px 12px; 
+    border-radius: 20px; 
+    background-color: #071062; 
+    color: #ffffff; 
+    font-size: 12px; 
+    font-family: $main-text-font;
+}
+
+
+
+@media screen and (min-width: 600) {
+    .project-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project-card {
+        width: calc(33.33% - 20px); /* Adjust the width for three cards per row */
+        margin-bottom: 20px;
+
+    }
 }

@@ -1,9 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap");
 /*
+
+
+$primary-color: #222222;
+$secondary-color: #A69D96;
+$red-color: #EF4F46;
+$background-color: #EDE8D8;
+
+
 $red-color: #EF4F46;
 $background-color: #F5EEE4;
+$red-color: #071062;
+
 
 
 */
@@ -58,6 +69,7 @@ body {
   margin-bottom: 10px;
   color: #071062;
   font-size: 7em;
+  text-transform: uppercase;
   font-family: "amandine", sans-serif;
   font-weight: 700;
 }
@@ -88,7 +100,7 @@ body {
   margin-bottom: 2%;
   text-align: center;
   color: #222222;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Questrial", sans-serif;
   letter-spacing: 0px;
   display: block;
   font-size: 1.2em;
@@ -113,6 +125,7 @@ body {
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .custom-link:hover {
@@ -120,48 +133,39 @@ body {
   font-family: "amandine", sans-serif;
   font-weight: 700;
   font-style: italic;
-  color: #A69D96;
+  color: #222222;
+  transform: translateX(5px);
 }
 
-/* Buttons STYLE 
-
-.button-container {
-  display: flex;
-  justify-content: center; 
-  gap: 20px; 
-  margin-bottom: 20px;
-  margin-top: 20px;
+/* JS Animation for the HEADING */
+.small-title,
+.big-title {
+  opacity: 0; /* Initially hide the titles */
+  transform: translateY(20px); /* Initially position them off-screen below */
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; /* Adjust timing to make the animation slower */
 }
 
-.button {
-    display: inline-block;
-    text-decoration: none;
-    color: $background-color;
-    background-color: $primary-color;
-    border: none;
-    border-radius: 28px; 
-    transition: color 0.4s, background-color 0.4s;
-    font-family: "amandine", sans-serif;
-    font-weight: 400;
-    text-align: center; 
-    padding: 15px 30px;
-    font-size: 1em; 
-    width: 120px; 
-  }
+/* Show the titles with animation when content is in view */
+.content-wrapper.in-view .small-title,
+.content-wrapper.in-view .big-title {
+  opacity: 1;
+  transform: translateY(0); /* Move the titles up (from below) */
+}
 
-.button:hover {
-  color: $background-color;
-  background-color: $red-color;
-  border: none;
+/* JS Animation for the titles and links */
+.titles-text,
+.links-container {
+  opacity: 0; /* Initially hide the content */
+  transform: translateY(20px); /* Initially position them off-screen below */
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; /* Adjust timing to make the animation slower */
 }
-*/
-@media screen and (max-width: 768px) {
-  .button {
-    padding: 10px 15px;
-    font-size: 0.8em;
-    text-align: center;
-  }
+
+.content-wrapper.in-view .titles-text,
+.content-wrapper.in-view .links-container {
+  opacity: 1;
+  transform: translateY(0); /* Move the content up (from below) */
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -197,61 +201,107 @@ body {
 
 .project-cards {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .project-card {
-  width: 30%;
+  display: flex;
+  gap: 20px;
   padding: 20px;
   box-sizing: border-box;
-  text-align: center;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.project-title {
-  font-size: 1.7em;
-  margin-bottom: 10px;
-  color: #222222;
-  font-weight: 400;
-  font-family: "amandine", sans-serif;
+.project-card:hover {
+  transform: translate(10px);
+  box-shadow: 0 0 15px rgba(0, 0, 50, 0.3);
+}
+
+.project-details {
+  flex: 2;
+}
+
+.link-to-project {
+  margin-top: 5px;
+}
+
+.project-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .project-image {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 15px;
-  margin-top: 15px;
   transition: transform 0.3s ease-in-out;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .project-image:hover {
-  transform: translateY(-10px);
+  transform: translate(10px);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.project-description-title {
-  font-size: 1em;
+.project-title {
+  font-size: 2em;
+  margin-bottom: 10px;
   color: #222222;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 1em;
+  font-family: "amandine", sans-serif;
+}
+
+.project-description-title {
+  font-size: 1.5em;
+  color: #222222;
+  font-family: "amandine", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
 }
 
 .project-description {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 1em;
   color: #222222;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Questrial", sans-serif;
   line-height: 1.2;
 }
 
+.skills-container {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.skill {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #071062;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Questrial", sans-serif;
+}
+
+@media screen and (min-width: 600) {
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .project-card {
+    width: calc(33.33% - 20px); /* Adjust the width for three cards per row */
+    margin-bottom: 20px;
+  }
+}
 body {
   display: flex;
   justify-content: center;
@@ -285,7 +335,7 @@ body {
 }
 
 .contact-text {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 
 /* Styles for the form */
@@ -303,7 +353,7 @@ form {
   }
 }
 label {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Questrial", sans-serif;
   letter-spacing: 0px;
   font-size: 1.2em;
   color: #071062;
@@ -318,7 +368,7 @@ button {
   margin-bottom: 15px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-weight: 400;
   font-size: 1em;
 }
@@ -329,7 +379,7 @@ textarea {
 }
 
 .text {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Questrial", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -352,12 +402,6 @@ textarea {
   color: #EDE8D8;
   background-color: #071062;
   border: none;
-}
-
-.container-body {
-  max-width: 900px;
-  padding: 20px;
-  height: 70vh;
 }
 
 .about-title {
@@ -394,7 +438,7 @@ textarea {
 .text-1 {
   color: #222222;
   margin-top: 20px;
-  font-family: Montserrat, sans-serif;
+  font-family: "Questrial", sans-serif;
   font-weight: 400;
   line-height: 1.9em;
 }
@@ -412,12 +456,28 @@ textarea {
   transform: translateX(10px);
 }
 
+.text-1,
+.h3-text,
+.hanna-img {
+  opacity: 0; /* Initially hide the titles */
+  transform: translateY(20px); /* Initially position them off-screen below */
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; /* Adjust timing to make the animation slower */
+}
+
+/* Show the titles with animation when content is in view */
+.content-wrapper.in-view .text-1,
+.content-wrapper.in-view .h3-text,
+.content-wrapper.in-view .hanna-img {
+  opacity: 1;
+  transform: translateY(0); /* Move the titles up (from below) */
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #EDE8D8;
-  border-bottom: 1px solid #A69D96;
+  border-bottom: 1px solid #706564;
   padding: 20px 20px;
   margin-bottom: 40px;
 }
@@ -432,16 +492,16 @@ textarea {
 }
 
 .name {
-  color: #A69D96;
-  font-family: "Montserrat", sans-serif;
+  color: #706564;
+  font-family: "Questrial", sans-serif;
   font-weight: lighter;
   text-transform: uppercase;
 }
 
 .contact-link,
 a {
-  color: #A69D96;
-  font-family: "Montserrat", sans-serif;
+  color: #706564;
+  font-family: "Questrial", sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
   text-decoration: none;
@@ -457,7 +517,7 @@ a:hover,
 }
 
 .site-footer {
-  border-top: 1px solid #A69D96;
+  border-top: 1px solid #706564;
   padding: 20px 20px;
   color: rgb(255, 255, 255);
   width: 100%;
@@ -476,13 +536,13 @@ a:hover,
   font-weight: 700;
   font-size: 1em;
   margin-bottom: 15px;
-  color: #A69D96;
+  color: #706564;
 }
 
 .footer-text {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-weight: 400;
   font-size: 0.7em;
   margin-bottom: 15px;
-  color: #A69D96;
+  color: #706564;
 }/*# sourceMappingURL=index.css.map */
