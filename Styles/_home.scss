@@ -20,7 +20,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 10vh; 
     //padding-bottom: 20vh;  
   }
   
@@ -76,18 +75,18 @@ body {
 }
 
 .titles-text span {
-    margin-bottom: 5px; 
-    text-align: right; 
-    margin-bottom: 2%;
+    margin-bottom: 10px; 
     text-align: center;
     color: $primary-color;
-    font-family: $main-text-font;
+    font-family: "amandine", sans-serif;
+    font-weight: 400;
+    //font-family: $main-text-font;
     //font-family: 'Oxygen', sans-serif;
     //font-family: 'Playfair Display', serif;
     letter-spacing: -0px;
     display: block;
     font-size: 1.2em; 
-    line-height: normal;
+    line-height: 1.2;
 }
 /* Style for links */
 
