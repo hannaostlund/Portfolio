@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <img src="../Images/stars.svg" alt="stars svg" />
                 </a>            
             </div>
-            <a href="/" div class="name">
+            <a href="/index.html" div class="name">
                 Home
                 </a>            
         </div>
