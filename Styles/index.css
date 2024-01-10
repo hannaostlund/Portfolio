@@ -2,21 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap");
-/*
-
-
+/* Other Color Combinations 
 $primary-color: #222222;
 $secondary-color: #A69D96;
 $red-color: #EF4F46;
 $background-color: #EDE8D8;
 
-
 $red-color: #EF4F46;
 $background-color: #F5EEE4;
 $red-color: #071062;
-
-
-
 */
 /*
 $primary-color: #222222;
@@ -42,7 +36,6 @@ body {
 
 .container {
   max-width: 900px;
-  padding: 20px;
 }
 
 .content-wrapper {
@@ -50,10 +43,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.title-wrapper {
-  margin-bottom: 20px;
 }
 
 .small-title {
@@ -273,6 +262,11 @@ body {
   color: #222222;
   font-family: "Questrial", sans-serif;
   line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.link-to-project {
+  color: #8091e4;
 }
 
 .skills-container {
@@ -297,7 +291,7 @@ body {
     justify-content: space-between;
   }
   .project-card {
-    width: calc(33.33% - 20px); /* Adjust the width for three cards per row */
+    width: calc(33.33% - 20px);
     margin-bottom: 20px;
   }
 }
@@ -455,6 +449,7 @@ textarea {
   transform: translateX(10px);
 }
 
+/* Code for transition on front page */
 .text-1,
 .h3-text,
 .hanna-img {

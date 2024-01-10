@@ -11,7 +11,6 @@ body {
 
 .container {
     max-width: 900px;
-    padding: 20px; 
     //height: 100vh;
 }
 
@@ -23,9 +22,6 @@ body {
     //padding-bottom: 20vh;  
   }
   
-  .title-wrapper {
-    margin-bottom: 20px;
-  }
 
   .small-title {
     right: 0;
@@ -88,8 +84,8 @@ body {
     font-size: 1.2em; 
     line-height: 1.2;
 }
-/* Style for links */
 
+/* Style for links */
 .links-container {
   display: flex; 
   justify-content: center; 

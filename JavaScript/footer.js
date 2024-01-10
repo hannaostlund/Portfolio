@@ -1,4 +1,4 @@
-//setting up a js reusable footer the same way as the header js i did before
+//Setting up a js reusable footer the same way as the header js i did before
 document.addEventListener('DOMContentLoaded', function() {
     const footerTemplate = document.createElement('footer');
     footerTemplate.classList.add('site-footer');

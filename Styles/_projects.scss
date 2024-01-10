@@ -109,6 +109,11 @@ body {
     color: $primary-color;
     font-family: $main-text-font;
     line-height: 1.2;
+    margin-bottom: 10px;    
+}
+
+.link-to-project {
+    color:#8091e4
 }
 
 .skills-container {
@@ -136,7 +141,7 @@ body {
     }
 
     .project-card {
-        width: calc(33.33% - 20px); /* Adjust the width for three cards per row */
+        width: calc(33.33% - 20px); 
         margin-bottom: 20px;
 
     }
