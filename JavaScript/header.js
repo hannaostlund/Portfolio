@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     headerTemplate.innerHTML = `
         <div class="left-section">
             <div class="stars-icon">
-                <a href="/">
+                <a href="../index.html">
                     <img src="../Images/stars.svg" alt="stars svg" />
                 </a>            
             </div>
-            <a href="/index.html" div class="name">
+            <a href="../index.html" div class="name">
                 Home
                 </a>            
         </div>
