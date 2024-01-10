@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div class="social-icons">
         <a href="https://www.linkedin.com/in/hanna-%C3%B6stlund-197214ba">
-            <img src="Images/linkedin.svg" alt="Linkedin icon" />
+            <img src="../Images/linkedin.svg" alt="Linkedin icon" />
         </a>
         <a href="https://github.com/hannaostlund">
-            <img src="Images/githubicon.svg" alt="Github icon" />
+            <img src="../Images/githubicon.svg" alt="Github icon" />
         </a>   
         </div>
     `;
